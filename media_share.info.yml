@@ -1,0 +1,6 @@
+name: Media Share Module
+description: Adds Social Share buttons Over media like images, videos, etc.
+package: Custom
+
+type: module
+core: 8.x

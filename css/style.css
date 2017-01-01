@@ -1,0 +1,58 @@
+/**
+ * @file
+ * Style for sharing buttons
+ *
+ * This file defines the style for the buttons that are show
+ * when images are hovered.
+ */
+
+/* sti */
+.sti {
+  position: relative;
+}
+
+/* Social buttons container */
+.sti .sti-share-box {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  width: 38px;
+  z-index: 999;
+  display: none;
+  -webkit-box-shadow: #ccc 0px 0px 3px 0px;
+  -moz-box-shadow: #ccc 0px 0px 3px 0px;
+  box-shadow: #ccc 0px 0px 3px 0px;
+}
+.sti .sti-share-box a {
+  float: left;
+  display: block;
+  width: 61px;
+  height: 61px;
+  text-indent: -9999em;
+  background: transparent url('../assets/icons.png') no-repeat;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  transition: all s linear;
+}
+
+/* Social Sharing Buttons */
+.sti .sti-facebook-btn {
+  background-position: -392px -77px !important;
+}
+.sti .sti-twitter-btn {
+  background-position: -0px -0px !important;
+}
+.sti .sti-google-btn {
+  background-position: -156px 0px !important;
+}
+.sti .sti-linkedin-btn {
+  background-position: -626px -158px  !important;
+}
+.sti .sti-pinterest-btn {
+  background-position: -314px -77px !important;
+}
+.sti .sti-reddit-btn {
+  background-position: -79px -77px !important;
+}

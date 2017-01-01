@@ -1,0 +1,13 @@
+media-share:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/media_share.js: {}
+  dependencies:
+    - core/jquery
+media-share-init:
+  version: 1.x
+  js:
+    js/init.js: {}
