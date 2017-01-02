@@ -1,11 +1,15 @@
 <?php
+
 /**
  * @file
  * Contains Drupal\social_image_share\Form\SettingsForm.
  */
+
 namespace Drupal\social_image_share\Form;
+
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
+
 /**
  * Class SettingsForm.
  *
@@ -20,12 +24,14 @@ class SettingsForm extends ConfigFormBase {
       'social_image_share.settings',
     ];
   }
+
   /**
    * {@inheritdoc}
    */
   public function getFormId() {
     return 'settings_form';
   }
+
   /**
    * {@inheritdoc}
    */
@@ -39,12 +45,14 @@ class SettingsForm extends ConfigFormBase {
     );
     return parent::buildForm($form, $form_state);
   }
+
   /**
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     parent::validateForm($form, $form_state);
   }
+  
   /**
    * {@inheritdoc}
    */
