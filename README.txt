@@ -21,4 +21,4 @@ CONFIGURATION
 -------------
 
  * Customize the MediaShare settings in Administration » Configuration »
-   MediaShare configuration settings.
+   Social Image Share Settings.
