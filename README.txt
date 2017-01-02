@@ -1,7 +1,7 @@
 INTRODUCTION
 ------------
 
-Media Share module allows to share images on a node. This module
+Social Image Share allows to share images on a node. This module
 allows the user to share images on facebook, google plus,
 pininterest and twitter.
 
