@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Demonstrates the possibilities of forms in Drupal 8.
+ * Adds javascript libraries and javascript to nodes.
  */
 
 use Drupal\Core\Form\FormStateInterface;
@@ -17,5 +17,15 @@ function media_share_entity_view(array &$build, \Drupal\Core\Entity\EntityInterf
   if($entity->getEntityTypeId() ==  "node"){
     $build['#attached']['library'][] = 'media_share/media-share';
     $build['#attached']['library'][] = 'media_share/media-share-init';
+    $config = \Drupal::service('config.factory')->getEditable('media_share.settings');
+    $elements = $config->get('custom_elements');
+    $build['#attached']['html_head'][] = [
+      [
+        '#type' => 'html_tag',
+        '#tag' => 'script',
+        '#value' => "window.onload = function(e){jQuery('".$elements."').sti({primary_menu: ['facebook', 'twitter', 'google', 'pinterest']});}",
+      ],
+      'custom-elements'
+    ];
   }
 }

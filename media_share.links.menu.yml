@@ -1,0 +1,6 @@
+media_share.settings_form:
+  title: 'Media Share Settings'
+  route_name: media_share.settings_form
+  description: 'Allows to change styles for specific element.'
+  parent: system.admin_config_system
+  weight: 99
