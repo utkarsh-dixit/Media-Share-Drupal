@@ -1,0 +1,9 @@
+social_image_share.settings_form:
+  path: '/admin/config/social_image_share'
+  defaults:
+    _form: '\Drupal\social_image_share\Form\SettingsForm'
+    _title: 'Social Image Share configuration settings'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

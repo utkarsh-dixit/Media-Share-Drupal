@@ -1,15 +1,15 @@
 <?php
 /**
  * @file
- * Contains Drupal\media_share\Form\SettingsForm.
+ * Contains Drupal\social_image_share\Form\SettingsForm.
  */
-namespace Drupal\media_share\Form;
+namespace Drupal\social_image_share\Form;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 /**
  * Class SettingsForm.
  *
- * @package Drupal\media_share\Form
+ * @package Drupal\social_image_share\Form
  */
 class SettingsForm extends ConfigFormBase {
   /**
@@ -17,7 +17,7 @@ class SettingsForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'media_share.settings',
+      'social_image_share.settings',
     ];
   }
   /**
@@ -30,7 +30,7 @@ class SettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('media_share.settings');
+    $config = $this->config('social_image_share.settings');
     $form['custom_elements'] = array(
       '#type' => 'textarea',
       '#title' => $this->t('Custom Elements'),
@@ -50,7 +50,7 @@ class SettingsForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
-    $this->config('media_share.settings')
+    $this->config('social_image_share.settings')
       ->set('custom_elements', $form_state->getValue('custom_elements'))
       ->save();
   }

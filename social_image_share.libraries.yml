@@ -1,13 +1,13 @@
-media-share:
+social-image-share-sti:
   version: 1.x
   css:
     theme:
       css/style.css: {}
   js:
-    js/media_share.js: {}
+    js/sti.js: {}
   dependencies:
     - core/jquery
-media-share-init:
+social-image-share-init:
   version: 1.x
   js:
     js/init.js: {}
