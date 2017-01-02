@@ -20,7 +20,5 @@ INSTALLATION
 CONFIGURATION
 -------------
 
-The module has no menu or modifiable settings. There is no configuration. When
-enabled, the module will make a block that could be placed in the structure.
-To remove the block, disable the module and clear the caches.
-
+ * Customize the MediaShare settings in Administration » Configuration »
+   MediaShare configuration settings.
